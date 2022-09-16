@@ -1,6 +1,6 @@
 # Learning Robust Input Constrained Control Barrier Functions for Guaranteed Safety of Car-Like Robots
 
-This is the code base for the CORL2022 submission "Learning Robust Input Constrained Control Barrier Functions for Guaranteed Safety of Car-Like Robots". It contains simulation code in Python and a ROS package for implementation, both incl. the vectorized computation of the Input Constrained Control Barrier Functions (ICCBFs).
+This is the code base for the paper "Learning Robust Input Constrained Control Barrier Functions for Guaranteed Safety of Car-Like Robots". It contains simulation code in Python and a ROS package for implementation, both incl. the vectorized computation of the Input Constrained Control Barrier Functions (ICCBFs).
 
 ## Simulation
 
