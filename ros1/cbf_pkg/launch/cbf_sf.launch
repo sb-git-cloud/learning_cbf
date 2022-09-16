@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <group ns="cbf">
+    <rosparam file="$(find cbf_pkg)/config/cbf_params.yaml" />
+    <param name="svm_model_name" value="$(find cbf_pkg)/svm_models_scalers/*.joblib" />
+    <param name="svm_scaler_name" value="$(find cbf_pkg)/svm_models_scalers/*.joblib" />
+  </group>
+  <node name="cbf_sf_node" pkg="cbf_pkg" type="cbf_node.py" output="screen"/>
+</launch>
