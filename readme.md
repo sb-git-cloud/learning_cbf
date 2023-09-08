@@ -2,6 +2,9 @@
 
 This is the code base for the paper "Learning Robust Input Constrained Control Barrier Functions for Guaranteed Safety of Car-Like Robots". It contains simulation code in Python and a ROS package for implementation, both incl. the vectorized computation of the Input Constrained Control Barrier Functions (ICCBFs).
 
+## Photos
+![Car](screenshot.jpeg)
+
 ## Simulation
 
 Samples from the Euclidean Distance Function (EDF) of a road are loaded from 'simulation/data/sim_track_S.mat' and used to train a SVM regression model using scikit-learn ('https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html'). This model is used to compose a robust safety filter. The learned filter is then used in closed-loop simulation. For the dynamics of the car-like robot we use the modified kinematic bicycle model with constant velocity. The nominal steering angle is supervised by the learned safety filter.
